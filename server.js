@@ -39,3 +39,7 @@ const upload = multer({ storage: storage });
 
 const userRoutes = require("./routes/userRoutes");
 app.use("/user", userRoutes);
+
+const dogRoutes = require("./routes/dogRoutes");
+
+app.use("/dog", dogRoutes);
